@@ -30,7 +30,7 @@ describe "working with hashes" do
       end
   
       it "if key is not present, returns a hash with the provided key assigned to the value of 1" do
-        expect(update_counting_hash({},'hello')).to eq({'hello' => 1})
+        expect(update_counting_hash({},'hello')).to eq(+)
         expect(update_counting_hash({total: 5},:age)).to eq({total: 5, age: 1})
       end
   
